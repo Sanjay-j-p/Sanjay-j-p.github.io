@@ -634,6 +634,29 @@ policies.I have presonally developed an HRL system for the Spot to approach and 
 
                 <tr>
                     <td style="padding:10px;width:75%;vertical-align:top">
+                        <papertitle><big>SO101 Perception-Driven Pick-and-Place System (ROS 2 + MoveIt 2 + Isaac Simulation)</big></papertitle>
+                        <br>
+                        <a href="https://github.com/Sanjay-j-p/ROS-2-Practical-Assignment-SO101-Motion-Planning-Perception-Integration">[GitHub]</a>
+                        <br><br>
+                        <p>
+                        This project presents a complete perception-driven pick-and-place pipeline developed for the SO101 robotic arm using ROS 2, Isaac Simulation, and MoveIt 2. The system integrates three modular nodes: a perception node for object detection, a motion planning node leveraging MoveIt 2, and a behavior tree node for high-level task execution. The perception pipeline detects a red cup using HSV color segmentation, estimates its 3D position from RGB-D data, and transforms it into the robot base frame using TF2. 
+                        
+                        Motion planning is executed through direct interaction with the MoveIt 2 action server, supporting Cartesian goal execution, timeout handling, and dynamic collision object insertion via the planning scene. A Behavior Tree architecture ensures non-blocking execution, coordinating detection, grasping, and placement through sequential task logic.
+                        
+                        The system demonstrates robust performance with features such as dynamic obstacle avoidance, real-time TF frame broadcasting, and fault-tolerant execution through timeout monitoring. Experimental results show reliable detection and successful pick-and-place execution in simulation, with the robot effectively avoiding obstacles when collision objects are enabled. This implementation highlights the importance of modular design, real-time perception integration, and behavior-based control for building scalable robotic manipulation systems.
+                        </p>
+
+                        <div style="display: flex; justify-content: space-between;">
+                            <video width="480" autoplay muted loop oncontextmenu="return false;">
+                                <source src="data/isaac_sim_with_ros.mp4" type="video/mp4">
+                                
+                            </video>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding:10px;width:75%;vertical-align:top">
                         <papertitle><big>Reimplementation and analysis of ”Mastering 005 Visual Continuous Control: Improved Data-Augmented Re006 inforcement Learning” (DrQ-v2)</big></papertitle>
                         <br>
                         <!-- <a href="https://github.com/yourusername/cartpole-cem">[GitHub]</a> -->
