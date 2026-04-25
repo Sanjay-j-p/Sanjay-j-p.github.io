@@ -423,7 +423,38 @@ compliance in grasping applications.
             <div id="content-experience" class="collapse in">
 
             <table border=0 class="bg_colour" style="padding:20px;width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-                
+                <tr>
+                    <td style="padding:10px;width:25%;vertical-align:middle">
+                        <div class="one">
+                            <img src='images/starkhacks.jpg' width="220">
+                        </div>
+                    </td>
+                    <td style="padding:10px;width:75%;vertical-align:top">
+                        <papertitle><big>StarkHacks 2026 – Multimodal Compliant Gripper</big></papertitle>
+                        <br>
+                        <a href="https://devpost.com/software/multimodal-compliant-gripper-with-force-feedback">[Project Page]</a>
+                        <br>
+                        <br>
+
+                        <p>
+                            StarkHacks 2026, the world’s largest hardware hackathon (750+ participants), brought together teams to solve real-world engineering challenges in a 36-hour sprint. Our team developed a <b>Multimodal Compliant Gripper</b>, designed to address the limitations of traditional robotic grippers that struggle with objects of varying shapes, sizes, and surface types.
+                        </p>
+
+                        <p>
+                            The system combines mechanical compliance with perception and feedback. It uses an onboard Intel RealSense D435if camera with a vision pipeline based on SAM to segment objects and fuse depth data, enabling classification (e.g., hollow vs. flat) and selection of an appropriate grasping strategy. The gripper adapts between a compliant jaw mechanism for irregular objects and suction-based grasping for smooth surfaces, while force feedback helps ensure stable and safe interaction.
+                        </p>
+
+                        <p>
+                            The hardware and control system integrate a compliant mechanism design, vacuum suction, and sensor-driven feedback, coordinated through a microcontroller and a lightweight communication pipeline between embedded hardware and a Linux-based control interface.
+                        </p>
+
+                        <p>
+                            Awarded <b>1st Place in the Ford ATP Grasping Challenge</b> (Bambu Lab P2S 3D Printer) and received an <b>Overall Honorable Mention</b>.
+                        </p>
+                    </td>
+                </tr>
+
+
                 <tr>
                     <td style="padding:10px;width:25%;vertical-align:middle">
                         <div class="one">
@@ -567,28 +598,40 @@ Won 3rd place and received a grant of $1800/₹150,000. <a href="https://drive.g
                     </td>
                 </tr>
 
-                
-
                 <tr>
                     <td style="padding:10px;width:75%;vertical-align:top">
-                        <papertitle><big>Solving CartPole with Cross-Entropy Method (CEM)</big></papertitle>
+                        <papertitle><big>Multimodal Compliant Gripper with Force Feedback | StarkHacks 2026</big></papertitle>
                         <br>
-                        <!-- <a href="https://github.com/yourusername/cartpole-cem">[GitHub]</a> -->
+                        <a href="https://devpost.com/software/multimodal-compliant-gripper-with-force-feedback">[Project Page]</a>
                         <br><br>
-                        <p>This project uses deep reinforcement learning to teach an agent how to balance a pole on a cart using the <strong>Cross-Entropy Method (CEM)</strong>.</p>
-                        <p>The implementation is built from scratch using PyTorch and the MuJoCo physics engine. It is inspired by the method presented in the book <em>Deep Reinforcement Learning Hands-On</em> by Maxim Lapan.</p>
-                        <p>Elite episodes are selected based on performance, and the policy network is updated using actions from only those successful episodes. This approach enables fast and intuitive learning, making it ideal for simple control tasks like CartPole.</p>
-                        <p>Future work includes implementing more advanced algorithms such as PPO and DDPG for more complex robot environments.</p>
 
-                        <div style="display: flex; justify-content: space-between;">
-                            <video width="480" autoplay muted loop oncontextmenu="return false;">
-                                <source src="data/CEM_RL_Cart.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                            
+                        <p>
+                            This project focuses on building a self-adaptive robotic gripper capable of handling objects with diverse shapes and surface properties. Traditional grippers lack flexibility when dealing with irregular geometries, motivating the development of a system that combines mechanical adaptability with perception and feedback.
+                        </p>
+
+                        <p>
+                            The gripper integrates a compliant jaw mechanism with vacuum-based suction, enabling it to switch grasping strategies based on object characteristics. A vision pipeline using an Intel RealSense camera supports object understanding, while embedded sensing enables real-time interaction control.
+                        </p>
+
+                        <p>
+                            My primary contribution was developing the <strong>electronics and control stack</strong>, including servo actuation and suction control on an Arduino-based system. I designed a three-layer communication pipeline using Python and MQTT to interface between embedded hardware and a Linux-based control system.
+                        </p>
+
+                        <p>
+                            I also implemented a <strong>Hall effect sensor-based force feedback system</strong>, modeling force using F = kx with linear regression calibration. This enabled real-time grasp stability estimation, reducing object slip and preventing damage during manipulation.
+                        </p>
+
+                        <p>
+                            The project was awarded <strong>1st Place in the Ford ATP Grasping Challenge</strong> and received an <strong>Overall Honorable Mention</strong>.
+                        </p>
+
+                        <div style="display: flex; justify-content: center;">
+                            <img src="images/starkhacks_gripper.jpg" width="480" alt="Multimodal Compliant Gripper">
                         </div>
                     </td>
                 </tr>
+
+                
 
                 
                 <tr> 
@@ -651,6 +694,27 @@ policies.I have presonally developed an HRL system for the Spot to approach and 
                                 <source src="data/isaac_sim_with_ros.mp4" type="video/mp4">
                                 
                             </video>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="padding:10px;width:75%;vertical-align:top">
+                        <papertitle><big>Solving CartPole with Cross-Entropy Method (CEM)</big></papertitle>
+                        <br>
+                        <!-- <a href="https://github.com/yourusername/cartpole-cem">[GitHub]</a> -->
+                        <br><br>
+                        <p>This project uses deep reinforcement learning to teach an agent how to balance a pole on a cart using the <strong>Cross-Entropy Method (CEM)</strong>.</p>
+                        <p>The implementation is built from scratch using PyTorch and the MuJoCo physics engine. It is inspired by the method presented in the book <em>Deep Reinforcement Learning Hands-On</em> by Maxim Lapan.</p>
+                        <p>Elite episodes are selected based on performance, and the policy network is updated using actions from only those successful episodes. This approach enables fast and intuitive learning, making it ideal for simple control tasks like CartPole.</p>
+                        <p>Future work includes implementing more advanced algorithms such as PPO and DDPG for more complex robot environments.</p>
+
+                        <div style="display: flex; justify-content: space-between;">
+                            <video width="480" autoplay muted loop oncontextmenu="return false;">
+                                <source src="data/CEM_RL_Cart.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            
                         </div>
                     </td>
                 </tr>
